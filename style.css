@@ -131,3 +131,30 @@ h3{
     position: absolute;
     padding-top: 80px;
 }
+@media (max-width: 575px) {
+    .circle {
+        background: var(--bs-light-rgb);
+    }
+    .circle::before {
+        content: "";
+    }
+    .circle::after {
+        content: "";
+    }
+    .circle-2 {
+        background: var(--bs-light-rgb);
+    }
+    .circle-2::before {
+        content: "";
+    }
+    .circle-2::after {
+        content: "";
+    }
+    .img-phone-2 {
+        margin-left: 0px;
+    }
+    
+}
+body {
+    overflow-x : hidden;
+}
