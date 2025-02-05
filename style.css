@@ -1,0 +1,133 @@
+.navbar-brand {
+    font-family: "Kanit", serif !important;
+    font-weight: 500;
+}
+h3{
+    font-family: "Kanit", serif !important;
+}
+
+.navbar-brand:hover {
+    color: #175abf !important;
+}
+
+.nav-link:hover {
+    color: #727272 !important;
+}
+
+.img-phone {
+    max-width: 60%;
+}
+
+.circle {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    background: #2937f0;
+    background: linear-gradient(171deg, #2937f0 0%, #9f1ae2 100%);
+}
+
+.circle::before {
+    content: "X";
+    position: absolute;
+    color: #2937f0;
+    font-size: 24px;
+    font-weight: 700;
+    left: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.circle::after {
+    content: ".";
+    position: absolute;
+    color: #2937f0;
+    font-size: 32px;
+    font-weight: 999;
+    right: 0;
+    top: 0;
+    transform: rotate(50deg);
+}
+
+.bg-tnw {
+    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+}
+
+.circle-2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    content: "";
+    background: #2937f0;
+    background: linear-gradient(171deg, #2937f0 0%, #9f1ae2 100%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+
+
+}
+
+.circle-2::before {
+    content: ".";
+    position: absolute;
+    color: #2937f0;
+    font-size: 32px;
+    font-weight: 999;
+    left: 0;
+    bottom: 0;
+    transform: rotate(50deg);
+
+}
+
+.circle-2::after {
+    content: "X";
+    position: absolute;
+    color: #2937f0;
+    font-size: 24px;
+    font-weight: 700;
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);
+    margin-right: -50px;
+}
+
+.img-phone-2 {
+    max-width: 80%;
+    margin-left: 60px;
+}
+
+.icons-color{
+    background: linear-gradient(45deg, #2937f0, #9f1ae2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.building-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.building-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/1500x800.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content {
+    position: absolute;
+    padding-top: 80px;
+}
