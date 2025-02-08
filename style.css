@@ -2,7 +2,8 @@
     font-family: "Kanit", serif !important;
     font-weight: 500;
 }
-h3{
+
+h3 {
     font-family: "Kanit", serif !important;
 }
 
@@ -18,7 +19,7 @@ h3{
     max-width: 60%;
 }
 
-.circle {
+/* .circle {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -27,14 +28,14 @@ h3{
     height: 400px;
     border-radius: 50%;
     position: relative;
-    background: #2937f0;
-    background: linear-gradient(171deg, #2937f0 0%, #9f1ae2 100%);
+    background: rgb(0, 88, 231);
+    background: linear-gradient(11deg, rgba(0, 88, 231, 1) 0%, rgba(226, 0, 0, 1) 100%);
 }
 
 .circle::before {
     content: "X";
     position: absolute;
-    color: #2937f0;
+    color: #175abf;
     font-size: 24px;
     font-weight: 700;
     left: 0;
@@ -45,7 +46,41 @@ h3{
 .circle::after {
     content: ".";
     position: absolute;
-    color: #2937f0;
+    color: #175abf;
+    font-size: 32px;
+    font-weight: 999;
+    right: 0;
+    top: 0;
+    transform: rotate(50deg);
+} */
+
+.circle {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    background: rgba(0, 89, 231, 0);
+}
+
+.circle::before {
+    content: "X";
+    position: absolute;
+    color: #175abf00;
+    font-size: 24px;
+    font-weight: 700;
+    left: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.circle::after {
+    content: ".";
+    position: absolute;
+    color: #175abf00;
     font-size: 32px;
     font-weight: 999;
     right: 0;
@@ -54,7 +89,7 @@ h3{
 }
 
 .bg-tnw {
-    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    background: linear-gradient(11deg, rgba(0, 88, 231, 1) 0%, rgba(226, 0, 0, 1) 100%);
 }
 
 .circle-2 {
@@ -63,7 +98,7 @@ h3{
     align-items: center;
     content: "";
     background: #2937f0;
-    background: linear-gradient(171deg, #2937f0 0%, #9f1ae2 100%);
+    background: linear-gradient(11deg, rgba(0,88,231,1) 0%, rgba(226,0,0,1) 100%);
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -101,8 +136,8 @@ h3{
     margin-left: 60px;
 }
 
-.icons-color{
-    background: linear-gradient(45deg, #2937f0, #9f1ae2);
+.icons-color {
+    background: linear-gradient(11deg, rgba(0,88,231,1) 0%, rgba(226,0,0,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -112,49 +147,64 @@ h3{
     width: 100%;
     height: 500px;
 }
+
 .building-bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/1500x800.jpg');
+    background-image: url('/assets/FTG_BG02.jpg');
     background-position: center;
     background-size: cover;
 
 }
+
 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .content {
     position: absolute;
     padding-top: 80px;
 }
+
 @media (max-width: 575px) {
     .circle {
         background: var(--bs-light-rgb);
     }
+
     .circle::before {
         content: "";
     }
+
     .circle::after {
         content: "";
     }
+
     .circle-2 {
         background: var(--bs-light-rgb);
     }
+
     .circle-2::before {
         content: "";
     }
+
     .circle-2::after {
         content: "";
     }
+
     .img-phone-2 {
         margin-left: 0px;
     }
-    
+
 }
+
 body {
-    overflow-x : hidden;
+    overflow-x: hidden;
+}
+
+.bg-hero{
+    background-image: url('/assets/ScoreHero_GameBG.jpg');
 }
